@@ -3,7 +3,8 @@
 const express = require("express");
 
 const app = express();
-app.use(express.static('public'));//COM ESSA EXTENSÃO BASTA COLOCAR O NOME DA IMAGEM
+app.use(express.static('public'))//COM ESSA EXTENSÃO BASTA COLOCAR O NOME DA IMAGEM
+
 
 
 //ROTAS
@@ -21,6 +22,9 @@ app.use(express.static('public'));//COM ESSA EXTENSÃO BASTA COLOCAR O NOME DA I
 
 app.get("/home",(req, res)=>{res.sendFile(__dirname + "/views/home.html")}); /*usamos em todas as paginas 
 para buscar as pastas e aparecer no servido*/
+app.get("/blog",(req, res)=>{res.sendFile(__dirname + "/views/blog.html")});
+app.get("/blog",(req, res)=>{res.sendFile(__dirname + "../public/img/destaque.webp")});
+
 
 //app.get("/manutencao",(req, res)=>{res.sendFile(__dirname + "/views/manutencao.html")});
 

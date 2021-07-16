@@ -1,0 +1,10 @@
+/*body{
+    background:red;
+    color: rgb(27, 24, 24);
+}*/
+*{
+   font-family: 'Courier New', Courier, monospace;
+}/* se escolher outro elemento a fonte muda*/
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+}

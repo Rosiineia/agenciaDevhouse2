@@ -5,8 +5,13 @@ const express = require("express");
 const app = express();
 app.use(express.static('public'))//COM ESSA EXTENSÃO BASTA COLOCAR O NOME DA IMAGEM
 
+app.get("/", (req, res) => {
+    res.sendFile(__dirname +"/views/home.html")
+})
 
-
+app.get("/", (req, res)=>{
+    res.redirect("/");
+})
 //ROTAS
 
 //app.get("/", (req, res)=>res.send("Olá, estamos na página home"))
@@ -21,7 +26,7 @@ app.use(express.static('public'))//COM ESSA EXTENSÃO BASTA COLOCAR O NOME DA IM
 //colocando imagens - encntrar um caminho absoluto
 
 app.get("/home",(req, res)=>{res.sendFile(__dirname + "/views/home.html")}); /*usamos em todas as paginas 
-para buscar as pastas e aparecer no servido*/
+para buscar as pastas e aparecer no servidor*/
 app.get("/blog",(req, res)=>{res.sendFile(__dirname + "/views/blog.html")});
 app.get("/blog",(req, res)=>{res.sendFile(__dirname + "../public/img/destaque.webp")});
 

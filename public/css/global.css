@@ -2,9 +2,23 @@
     background:red;
     color: rgb(27, 24, 24);
 }*/
-*{
+
+.id{/*#id ou .id( classe)*/
+    background: red;
    font-family: 'Courier New', Courier, monospace;
 }/* se escolher outro elemento a fonte muda*/
 h1{
     font-family: Arial, Helvetica, sans-serif;
+}
+*{/*vai mudar todos elementos dentro do body;usar no maximo duas fontes*/
+font-family: 'Times New Roman', Times, serif;
+
+}
+
+ul{
+    list-style: none;/*retira icone da ul*/
+}
+.icon-social{/* coloca a informação  .icon-social na tag img na pag. html*/
+   
+    width: 80px;
 }

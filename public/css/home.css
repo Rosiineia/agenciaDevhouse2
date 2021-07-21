@@ -1,0 +1,55 @@
+body{
+    font-family: "roboto"
+}
+
+
+
+
+header{
+    display: flex;
+    justify-content: space-around;
+    height: 80px;
+    background: gray;
+    align-items: center;
+}
+*{
+    padding: 0;/*swmpre deixar padding e margin em 0 zero */
+    margin: 0;
+}
+.menu {
+
+}
+.menu a{ /*le- se : estou selecionado o elemento a que está dentro do elemento que tem classe menu*/
+    color: rgb(9, 9, 161);
+    margin-left: 50px;
+    text-decoration: none;/*RETIRA O ANDERLAINE*/
+    font-size: 22px;
+
+}
+.atendimento button{
+        background-color: #3751ff;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    padding: 20px;
+    border-radius: 40px;/* aredonda a borda do botão*/
+    cursor: pointer;/*insere uma "maãozinha ao cursor*/
+}
+
+
+/*ul{
+    list-style: none;
+    display: flex;
+    height: 30px;
+}
+/*background: #0000ffb0;
+        display: flex;
+        /* align-content: space-around; */
+       /* align-items: center;
+        justify-content: space-around;
+        height: 90px;
+        color: #fff;*/
+        /*.banner img{
+            display:none;
+
+        }*/

@@ -1,0 +1,33 @@
+
+
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul{
+    list-style: none;/*retira icone da ul*/
+}
+.icon-social{/* coloca a informação  .icon-social na tag img na pag. html*/
+   
+    width: 80px;
+}
+header{
+    
+        background: #0000ffb0;
+        display: flex;
+        /* align-content: space-around; */
+        align-items: center;
+        justify-content: space-around;
+        height: 90px;
+        color: #fff;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    background: gray;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}

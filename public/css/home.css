@@ -3,8 +3,6 @@ body{
 }
 
 
-
-
 header{
     display: flex;
     justify-content: space-around;
@@ -12,6 +10,7 @@ header{
     background: gray;
     align-items: center;
 }
+
 *{
     padding: 0;/*swmpre deixar padding e margin em 0 zero */
     margin: 0;
@@ -35,21 +34,38 @@ header{
     border-radius: 40px;/* aredonda a borda do botão*/
     cursor: pointer;/*insere uma "maãozinha ao cursor*/
 }
-
-
-/*ul{
-    list-style: none;
+section.banner{
+   justify-content: space-around;
     display: flex;
-    height: 30px;
+     flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    background-color: white;
 }
-/*background: #0000ffb0;
-        display: flex;
-        /* align-content: space-around; */
-       /* align-items: center;
-        justify-content: space-around;
-        height: 90px;
-        color: #fff;*/
-        /*.banner img{
-            display:none;
 
-        }*/
+div button {
+    color: white;
+    border-radius: 15px;
+    cursor: pointer;
+    background-color: #3751ff;
+    align-items: center;
+    font-size: 16px;
+
+}
+h1{
+    color: blue;
+    font-size: 30px;
+
+}
+p{
+    color: black;
+    font-size: 20px;
+
+}
+.banner *{
+    margin-top: 10px;/* da espaço entre "paragrafos*/
+    }
+
+
+
+

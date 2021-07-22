@@ -65,7 +65,31 @@ p{
 .banner *{
     margin-top: 10px;/* da espaço entre "paragrafos*/
     }
-
-
+section.text{
+    display: flex;
+    justify-content: space-around;
+}
+div.banner-2{
+    display: flex;
+    border-radius: 15px;
+    cursor: pointer;
+    color: #3751ff;
+    align-items: center;
+    font-size: 16px;
+}
+ul p{
+    
+    display: flex;
+    flex-direction: column;
+   font-family: "roboto";
+  
+}
+ 
+ul li{
+    list-style: none;
+    margin: 30px auto;
+    padding: 100px;
+    flex-direction: column;
+}
 
 

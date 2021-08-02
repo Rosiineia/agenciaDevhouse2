@@ -92,4 +92,21 @@ ul li{
     flex-direction: column;
 }
 
+nav{
+    display: flex;
+    justify-content: space-around;
+}
+section h1{
+    text-align: center
+}
+/*ul p{
+    display: flex;
+    text-align: center;
+    padding: 50px;
+   
+    
+  
+}
+
+
 

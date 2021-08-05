@@ -1,112 +1,75 @@
-body{
-    font-family: "roboto"
-}
-
-
-header{
+body {
+    font-family: "Roboto";
+  }
+  header {
     display: flex;
     justify-content: space-around;
     height: 80px;
-    background: gray;
+  
     align-items: center;
-}
-
-*{
-    padding: 0;/*swmpre deixar padding e margin em 0 zero */
-    margin: 0;
-}
-.menu {
-
-}
-.menu a{ /*le- se : estou selecionado o elemento a que está dentro do elemento que tem classe menu*/
-    color: rgb(9, 9, 161);
+  }
+  
+  .menu a {
+    color: #3f3f6c;
     margin-left: 50px;
-    text-decoration: none;/*RETIRA O ANDERLAINE*/
+    text-decoration: none;
     font-size: 22px;
-
-}
-.atendimento button{
-        background-color: #3751ff;
+  }
+  
+  .atendimento button {
+    background-color: #3751ff;
     font-size: 18px;
     font-weight: bold;
-    color: white;
-    padding: 20px;
-    border-radius: 40px;/* aredonda a borda do botão*/
-    cursor: pointer;/*insere uma "maãozinha ao cursor*/
-}
-section.banner{
-   justify-content: space-around;
-    display: flex;
-     flex-direction: column;
-    align-items: center;
+    color: #fff;
+    padding: 10px;
+    border-radius: 40px;
+    cursor: pointer;
+  }
+  
+  .banner {
     padding: 40px;
-    background-color: white;
-}
-
-div button {
-    color: white;
-    border-radius: 15px;
-    cursor: pointer;
-    background-color: #3751ff;
+    background-color: #f2f9ff;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    font-size: 16px;
-
-}
-h1{
-    color: blue;
-    font-size: 30px;
-
-}
-p{
+    justify-content: space-around;
+  }
+  
+  .banner h1 {
+    color: #1e266d;
+    font-size: 46px;
+  }
+  .banner * {
+    margin-top: 10px;
+  }
+  
+  .button-padrao {
+    border-radius: 40px;
+    padding: 10px;
+    border-color: none;
+  }
+  
+  .texto-padrao {
     color: black;
-    font-size: 20px;
-
-}
-.banner *{
-    margin-top: 10px;/* da espaço entre "paragrafos*/
+  }
+  
+  #menu-mobile {
+    display: none;
+  }
+  
+  @media (max-width: 465px) {
+    .menu {
+      display: none;
     }
-section.text{
-    display: flex;
-    justify-content: space-around;
-}
-div.banner-2{
-    display: flex;
-    border-radius: 15px;
-    cursor: pointer;
-    color: #3751ff;
-    align-items: center;
-    font-size: 16px;
-}
-ul p{
-    
-    display: flex;
-    flex-direction: column;
-   font-family: "roboto";
   
-}
- 
-ul li{
-    list-style: none;
-    margin: 30px auto;
-    padding: 100px;
-    flex-direction: column;
-}
-
-nav{
-    display: flex;
-    justify-content: space-around;
-}
-section h1{
-    text-align: center
-}
-/*ul p{
-    display: flex;
-    text-align: center;
-    padding: 50px;
-   
-    
+    .atendimento {
+      display: none;
+    }
   
-}
-
-
-
+    #menu-mobile {
+      display: block;
+    }
+    header {
+      justify-content: space-between;
+    }
+  }

@@ -7,7 +7,7 @@ const rotas = require("./routes");
 
 const app = express();
 // configurando o template engine
-app.set("view engine", "ejs");
+app.set("view engine", "ejs");/*template engine*/
 app.set("views", path.resolve("views"));
 
 app.use(express.json());

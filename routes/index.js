@@ -4,10 +4,10 @@ const routes = express.Router();
 
 const depoimentos = require("../models/depoimentos");
 
-/*routes.get("/", (req, res) => {
+routes.get("/", (req, res) => {
   const usuario = undefined;
   res.render("home", { titulo: "Sua empresa vai ser incrivel!", usuario });
-});*/
+});
 
 routes.get("/home", (req, res) => {
   res.redirect("/");

@@ -1,16 +1,11 @@
 const express = require("express");
 
+const produtoController = require("../controllers/produtos");
+
 const routes = express.Router();
 
-routes.get("/produtos/lista", (req, res) => {
-  res.send("Pagina de produtos");
-});
+routes.get("/admin/cadastro-produto", produtoController.cadastrarProduto);
+routes.get("/admin/produtos", produtoController.listarProdutosAdmin);
+routes.post("/salvar-produto", produtoController.salvarProduto);
 
-routes.get("/produto/:id", (req, res) => {
-  if (typeof Number(req.params.id) !== "number") {
-    return res.send("Deve digitar um numero");
-  }
-
-  res.send("Pagina de produtos");
-});
 module.exports = routes;
